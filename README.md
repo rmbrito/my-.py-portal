@@ -1,18 +1,19 @@
-#My .py Portal Maker
+My .py Portal Maker
 
 Yay, an ASCII top-down portal puzzle game written in pure Python (standard library only, no dependencies).
 
 Place two portals, push boxes and reach the exit. Levels are plain text files, so anyone can make their own.
 
-## Run
 
-Requires Python 3.8+ with `tkinter` (included in most Python installs).
+Requires Python with `tkinter` (included in most Python installs).
 
 ```
 python main.py
 ```
 
-## Controls
+I actually did run with Powershell: poetry run python main.py
+
+# Controls
 
 | Key | Action |
 |-----|--------|
@@ -24,14 +25,14 @@ python main.py
 | R | Restart level (asks for confirmation) |
 | ESC | Menu |
 
-## How it works
+# How it works
 
 - Portals stick to `#` walls. Shots stop at boxes and pass through glass.
 - Walk into a portal from its open side to come out of the other one.
 - Push boxes into free tiles. Walls block you and the boxes.
 - Reach `X` to finish the level.
 
-## Make your own levels
+# Make your own levels
 
 Every `.txt` file in `maps/` is a level, played in alphabetical order.
 
@@ -44,7 +45,7 @@ Every `.txt` file in `maps/` is a level, played in alphabetical order.
 | `B` | Box |
 | `X` | Exit |
 
-## Project structure
+# Project structure
 
 ```
 main.py     window, input, ASCII drawing, menus
@@ -53,9 +54,7 @@ levels.py   loads maps/*.txt
 maps/       level files
 ```
 
-#![README](images/readme.jpg)
-#![Portals](images/portals.jpg)
-
-## License
+![README](images/readme.jpg)
+![Portals](images/portals.jpg)
 
 GPL-3.0-or-later. See [LICENSE](LICENSE).
